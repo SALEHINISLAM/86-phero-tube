@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="Icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>Blog</title>
+</head>
+<body class="container mx-auto">
+    <header>
+
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-xl" href="index.html"><img src="Logo.png" alt=""></a>
+            </div>
+            
+            <div class="navbar-end">
+              <a class="btn" href="blog.html">Blog</a>
+            </div>
+          </div>
+<br><br>
+        <h1 class="text-5xl font-bold text-center">
+            Short Detail about API
+        </h1>
+    </header>
+    <main class="flex flex-col space-y-4 my-7">
+        <section>
+            <h3 class="text-2xl font-semibold">
+                var
+            </h3>
+            <p class="text-xl">
+                Function-scoped. Can be redeclared and updated. Hoisted to the top of its scope.
+            </p>
+            <h3 class="text-2xl font-semibold">
+                let
+            </h3>
+            <p class="text-xl">
+                Block-scoped. Cannot be redeclared within the same block but can be updated. Not hoisted.
+            </p>
+            <h3 class="text-2xl font-semibold">
+                const
+            </h3>
+            <p class="text-xl">
+                Block-scoped. Cannot be redeclared or updated. The value it holds cannot be reassigned, but if it's an object, the object's properties can be changed.
+            </p>
+        </section>
+        <section>
+            <h3 class="text-2xl font-semibold">
+                null
+            </h3>
+            <div class="mockup-code w-4/5 md:w-3/4 lg:w-1/2">
+                <pre><code>let user = null;</code></pre>
+              </div>
+            <p class="text-xl">
+                Represents the intentional absence of any object value. Use it when you want to intentionally clear a variable, indicating that it does not point to any object.
+            </p>
+            <h3 class="text-2xl font-semibold">
+                undefined
+            </h3>
+            <div class="mockup-code w-4/5 md:w-3/4 lg:w-1/2">
+                <pre><code>let user;<br>  console.log(user); // undefined</code></pre>
+              </div>
+            <p class="text-xl">
+                Indicates a variable has been declared but has not yet been assigned a value. It is also the default return value for functions that do not explicitly return something.
+            </p>
+        </section>
+        <section>
+            <h3 class="text-2xl font-semibold">
+                REST API
+            </h3>
+            <p class="text-xl">
+                A REST API (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services. It uses standard HTTP methods (GET, POST, PUT, DELETE) to perform CRUD (Create, Read, Update, Delete) operations on resources, which are typically represented in JSON or XML format. REST APIs are stateless, meaning each request from a client to server must contain all the information needed to understand and process the request.            </p>
+        </section>
+    </main>
+</body>
+</html>
